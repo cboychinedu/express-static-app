@@ -120,6 +120,24 @@ function myFunction()
 
 };
 
+// Adding new list items to the page
+let listArray = document.querySelector("ul.first-ul");
+let clickMebtn = document.querySelector(".ClickMebtn");
+
+// Adding event listener
+clickMebtn.addEventListener('click', function()
+{
+    // Creating a new list
+    let li = document.createElement('li');
+    li.innerHTML = "Item 5";
+    li.className = "highlight"; 
+
+    // Appending the values into the listArray
+    listArray.append(li);
+    console.log(li);
+})
+
+
 //
 header.addEventListener("click", function()
 {

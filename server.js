@@ -45,6 +45,14 @@ app.get('/register', (req, res, next) =>
     res.sendFile(path.join(__dirname, 'public', 'register.html'));
 })
 
+// Adding the todo route
+app.get('/todo', (req, res) =>
+{
+    // Sending the webpage for the todo application
+    res.sendFile(path.join(__dirname, 'public', 'todolist.html'));
+    
+})
+
 // listening for connections
 app.listen(PORT, 'localhost', () =>
 {
