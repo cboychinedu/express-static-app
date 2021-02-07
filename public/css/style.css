@@ -1,0 +1,77 @@
+body {
+  background-color: #111113;
+  color: white;
+  margin: 3%;
+  padding: 3%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 20px 20px 20px 10px;
+
+}
+
+li {
+  padding: 10px 10px 10px 10px;
+  margin-left: 20px;
+}
+
+li.highlight {
+  background-color: blueviolet;
+  color: #fff;
+}
+
+.first-para {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.btn-result {
+  font-size: 30px;
+  font-color: white;
+  font-weight: bold;
+}
+
+@keyframe example {
+  0% {float: left;}
+  25% {float: right;}
+}
+
+#homepage-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  animation-name: example;
+  animation-duration: 5s;
+
+}
+
+#email-value {
+  width: 400px;
+  height: 24px;
+  border-radius: 5px;
+  font-size: 11px;
+  padding-left: 9px;
+}
+
+#email-submit-btn {
+  height: 24px;
+  font-size: 10px;
+  margin-top: 15px;
+  margin-left: 0px;
+  border-radius: 10px;
+  padding-top: 2px;
+  width: 110px;
+}
+
+.submit-btn {
+  width: 170px;
+  height: 47px;
+  border-radius: 20px;
+  text-align: center;
+
+}
+
+.submit-btn:hover {
+  background-color: white;
+}

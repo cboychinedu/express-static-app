@@ -1,0 +1,72 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title> Working with express js </title>
+
+      <!-- Adding the css file -->
+      <link rel="stylesheet" href="css/style.css" >
+      <!-- <script type="application/x-javascript" src="javascript/timeout.js"></script> -->
+  <head>
+  <body>
+    <h1> Your code is being served by the express engine! </h1>
+    <h2 id="homepage-section"> HOMEPAGE SECTION </h2>
+    <br>
+    <script>
+      function waitAndshow()
+      {
+          var systemdate = new Date();
+          document.getElementById('clock').innerHTML = systemdate.toLocaleTimeString();
+      }
+
+      let cnt = 0;
+      function changeColor()
+      {
+         if (cnt === 6)
+          cnt = 0;
+
+         let colors = ["red", "black", "red", "black", "red", "black"];
+         let h1 = document.getElementById('homepage-section');
+         h1.style.backgroundColor = colors[cnt];
+         cnt ++;
+
+      }
+
+      setInterval(changeColor, 2000);
+
+    </script>
+    <h5> <span id="clock"> </span> </h5>
+    <br>
+    <p> <b> You are typing: </b> <span id="typed-message"> . </span> </p> <br>
+
+    <!-- Creating the email input tag -->
+    <label for="email" class="email-label" id="email-label" > <b> Email is: </b> </label> <br> <br>
+    <input type="email" class="email-value" id="email-value" placeholder="Email address"> <br>
+    <input type="submit" class="email-submit-btn" id="email-submit-btn" value="Submit"> <br>
+
+    <!-- Creating a button tag -->
+    <p class="btn-result" id="btn-result"> </p>  <br> <br>
+    <input type="submit" class="submit-btn" id="submit-btn" onclick="multiply(10, 2);" value="Calcuate" >
+
+    <br> <br>
+    <a href="/" id="homepage-section"> HOME PAGE </a> <br>
+    <a href="/register"> REGISTER </a> <br>
+    <a href="/about"> ABOUT </a> <br>
+
+    <!-- Adding html lists -->
+    <ul>
+      <li class="highlight"> Item 1 </li>
+      <li> Item 2 </li>
+      <li class="highlight"> Item 3 </li>
+      <li> Item 4 </li>
+
+    </ul>
+
+    <p> Download the text file here: <a href="images/text.txt"> Download </a> </p>
+
+    <!-- Adding the javascript -->
+
+    <script src="javascript/script.js"> </script>
+  </body>
+
+</html>
